@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp">
+
+    <!-- Thumbnail image-->
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp" />
+    <!--<ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/thumbnail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/win"/>-->
+    <!-- Items Title -->
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Category"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" />
+    <!-- <TextView
+         android:id="@+id/description"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/textViewName"
+         android:layout_marginTop="2dp"
+         android:layout_marginLeft="30dp"
+         android:layout_toEndOf="@+id/thumbnail"
+         android:layout_toRightOf="@+id/thumbnail"
+         android:textColor="@color/genre"
+         android:textSize="15sp"
+         />
+
+     &lt;!&ndash; Price &ndash;&gt;
+     <TextView
+         android:id="@+id/priceID"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/description"
+         android:layout_marginTop="1dip"
+         android:layout_marginLeft="30dp"
+         android:layout_toEndOf="@+id/thumbnail"
+         android:layout_toRightOf="@+id/thumbnail"
+         android:textSize="@dimen/rating" />
+
+     &lt;!&ndash; Type &ndash;&gt;
+     <TextView
+         android:id="@+id/Type"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/priceID"
+         android:layout_marginTop="0dp"
+         android:layout_toEndOf="@+id/thumbnail"
+         android:layout_toRightOf="@+id/thumbnail"
+         android:textColor="@color/genre"
+         android:textSize="0dp"
+         android:visibility="invisible" />
+
+
+     &lt;!&ndash; Type &ndash;&gt;
+
+
+     &lt;!&ndash; ID &ndash;&gt; -->
+     <TextView
+         android:id="@+id/theID"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentEnd="true"
+         android:layout_alignParentRight="true"
+         android:textColor="@color/theID"
+         android:textSize="0dp"
+         android:text="Teh id"
+         android:visibility="invisible"
+         android:layout_marginTop="0dp"/>
+
+</RelativeLayout>
